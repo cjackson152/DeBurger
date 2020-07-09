@@ -11,7 +11,7 @@ app.use(methodOverride("_method"));
 let exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view enginge", "handlebars");
+app.set("view engine", "handlebars");
 let routes = require("./controllers/controller.js");
 
 app.use("/", routes);
