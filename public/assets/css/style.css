@@ -3,10 +3,6 @@ li {
     margin: 10px;
 }
 
-ul {
-
-}
-
 .label {
     font-weight: bolder;
 }
@@ -55,7 +51,9 @@ html, body {
 }
 
 body {
-
+background-image: url(https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F545370%2Fburger-on-marble-background.jpg&w=700&op=resize);
+background-position: center center;
+background-repeat: no-repeat;
 }
 
 div, body {
