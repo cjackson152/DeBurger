@@ -1,0 +1,53 @@
+<div class = "container bg">
+    <div class = "row">
+        <div class = "center col-sm-12">
+            <img src = "deburger\public\assets\images\burger-on-round-wooden-tray-2235831.jpg" alt = "deburger">
+            <h1>DeBurger</h1>
+            <br/>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col-sm-6">
+            <br>
+            <h3>Sandwiches To Order</h3>
+            <ul>
+                {{#each burgers}}
+                    {{#unless this.eaten}}
+                    <li>
+                        {{this.id}}
+                        {{this.burger_name}}
+                        <form action = "/{{this.id}}?_method=PUT" method = "POST">
+                        <input type = "hidden" name = "eaten" value = "true">
+                        <button class = "btn-secondary" type = "submit">Eaten</button>
+                        </form>
+                    </li>
+                    {{/unless}}
+                    {{/each}}
+            </ul>
+        </div>
+        <div class = "col-sm-6">
+            <h3>Burgers You've Eaten</h3>
+
+            {{#each burger}}
+                {{#if this.eaten}}
+                <li>
+                    {{this.i}}
+                    {{this.burger_name}}
+                </li>
+                {{/if}}
+                {{/each}}
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "center col-sm-12">
+            <h3>Create A Sandwich</h3>
+            <form class = "create-update-form" action = "/" method = "POST">
+            <div class = "form-group">
+                <p>Create a Sandwich and Order</p>
+                <input type = "text" id = "ca" name = "burger_name">
+            </div>
+            <button class = "btn-secondary" type = "submit">Build</button>
+            </form>
+        </div>
+    </div>
+</div>
