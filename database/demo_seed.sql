@@ -19,4 +19,11 @@ INSERT INTO sandwiches (
     "Pastrami Burger",
     0
 
+),
+(
+
+    "Veggie Burger",
+    0
+
+
 );
