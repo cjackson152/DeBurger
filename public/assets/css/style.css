@@ -1,10 +1,12 @@
 li {
     padding: 10px;
     margin: 10px;
+    color: white
 }
 
 .label {
     font-weight: bolder;
+    color: white
 }
 
 .center {
@@ -19,17 +21,25 @@ img {
     align-content: center;
 }
 
+h1 {
+    text-align: center;
+    color: white
+}
+
 h6 {
     text-align: center;
+    color: white
 }
 
 h2 {
     text-align: center;
+    color: white
 
 }
 
 h3 {
     text-align: center;
+    color: white
 }
 
 .create-update-form {
@@ -51,14 +61,10 @@ html, body {
 }
 
 body {
-<<<<<<< HEAD:public/assets/css/style.css
 background-image: url(https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F545370%2Fburger-on-marble-background.jpg&w=700&op=resize);
 background-position: center center;
 background-repeat: no-repeat;
-=======
-    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fstockburgerco.com%2Fblog%2Fpanel%2Fhome-image-slider%2Fstockburgerco-gallery-001%2F&psig=AOvVaw0Fdmuu3lTKaBQ6ZjE6wDvZ&ust=1594413984318000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjRwZKFweoCFQAAAAAdAAAAABAD)
-
->>>>>>> 6de87d3343f2f3966f3b999082efd804daa95c34:public/assets/burger.css
+background-color: green;
 }
 
 div, body {
